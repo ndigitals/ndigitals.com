@@ -2,30 +2,6 @@
 #
 # Reference: https://git-scm.com/docs/gitignore
 
-# Default directories to ignore.
-cache/*
-mu-plugins/*
-plugins/*
-themes/*
-uploads/*
-upgrade/*
-vendor/*
-
-# For plugins or themes you wish to track, you may explicitly add them with a leading "!".
-#
-# Note that these should come *after* the default directories listed above!
-!mu-plugins/index.php
-!plugins/index.php
-!themes/index.php
-!uploads/index.php
-#!plugins/my-feature-plugin
-#!themes/my-theme
-
-# Drop-in files that are typically provided by plugins.
-advanced-cache.php
-object-cache.php
-sunrise.php
-
 # Log files, database dumps, and archives.
 *.gz
 *.log
@@ -36,3 +12,33 @@ sunrise.php
 # System files.
 .DS_Store
 Trashes.db
+
+# WP Starter
+.env
+web/wp-config.php
+web/wp/
+web/wp-content/vendor
+
+# Default directories to ignore.
+web/wp-content/cache/*
+web/wp-content/mu-plugins/*
+web/wp-content/plugins/*
+web/wp-content/themes/*
+web/wp-content/uploads/*
+web/wp-content/upgrade/*
+
+# For plugins or themes you wish to track, you may explicitly add them with a leading "!".
+#
+# Note that these should come *after* the default directories listed above!
+!web/wp-content/mu-plugins/index.php
+!web/wp-content/plugins/index.php
+!web/wp-content/themes/index.php
+!web/wp-content/uploads/index.php
+#!web/wp-content/plugins/my-feature-plugin
+#!web/wp-content/themes/my-theme
+
+# Drop-in files that are typically provided by plugins.
+web/wp-content/advanced-cache.php
+web/wp-content/object-cache.php
+web/wp-content/sunrise.php
+
