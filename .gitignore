@@ -15,7 +15,7 @@ Trashes.db
 
 # WP Starter
 .env
-web/wp-config.php
+!web/wp-config.php
 web/wp/
 web/wp-content/vendor
 
